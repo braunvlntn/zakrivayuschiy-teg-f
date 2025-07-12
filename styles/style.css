@@ -169,3 +169,31 @@
 .button-state:focus-visible {
   box-shadow: 2px 2px 0 var(--accent-color);
 }
+
+.filter_sepia {
+  filter: sepia(80%);
+}
+
+.filter_grayscale {
+  filter: grayscale(80%);
+}
+
+.filter_contrast {
+  filter: contrast(200%);
+}
+
+.filter_invert {
+  filter: invert(100%);
+}
+
+.filter_saturate {
+  filter: saturate(250%);
+}
+
+.filter_blur {
+  filter: blur(15px);
+}
+
+.filter_hue-rotate {
+  filter: hue-rotate(80deg) blur(2px) sepia(50%);
+}
