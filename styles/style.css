@@ -13,4 +13,44 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  font-family: var(--main-font), Arial, sans-serif;
+}
+
+@supports (font-variation-settings: normal) {
+  .page {
+    font-variation-settings: "wght" var(--main-font-weight, 400), "slnt" 0;
+  }
+}
+
+.bordered {
+  border: var(--border);
+}
+
+.bordered-bottom {
+  border-bottom: var(--border);
+}
+
+.flex-container {
+  width: var(--flex-width);
+  margin: 0 auto;
+}
+
+.header {
+  font-family: var(--accent-font);
+  margin-block-start: 98px;
+  margin-block-end: 96px;
+  background-color: var(--bg-color);
+  text-align: center;
+  padding-block-start: 130px;
+  padding-block-end: 130px;
+  text-transform: uppercase;
+}
+
+.header__logo {
+  font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+  margin-block-end: 20px;
+}
+
+.header__title {
+  font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
 }
