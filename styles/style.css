@@ -16,6 +16,7 @@
   font-family: var(--main-font), Arial, sans-serif;
   background-image: var(--bg-gradient);
   background-size: cover;
+  background-attachment: fixed;
 }
 
 @supports (font-variation-settings: normal) {
@@ -46,7 +47,7 @@
   position: relative;
   margin: 0;
   padding: 0;
-  font-family: var(--accent-font);
+  font-family: var(--accent-font), sans-serif;
   line-height: 90%;
 }
 
@@ -86,7 +87,7 @@
 }
 
 .header {
-  font-family: var(--accent-font);
+  font-family: var(--accent-font), sans-serif;
   margin-block-start: 98px;
   margin-block-end: 96px;
   background-color: var(--bg-color);
@@ -132,7 +133,7 @@
   text-transform: uppercase;
   right: 25px;
   top: 25px;
-  font-family: var(--accent-font);
+  font-family: var(--accent-font), sans-serif;
   font-size: 14px;
   text-shadow: -1px 0 var(--bg-color), 0 1px var(--bg-color),
     1px 0 var(--bg-color), 0 -1px var(--bg-color);
@@ -193,7 +194,7 @@
 
 .card__like-button {
   padding-top: 2px;
-  font-family: var(--accent-font);
+  font-family: var(--accent-font), sans-serif;
   font-size: 14px;
   line-height: 90%;
   min-inline-size: 130px;
@@ -228,7 +229,7 @@
   filter: hue-rotate(80deg) blur(2px) sepia(50%);
 }
 
-.footer {
+.button-container {
   padding-top: 50px;
   display: flex;
   justify-content: center;
