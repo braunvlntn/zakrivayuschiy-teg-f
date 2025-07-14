@@ -218,7 +218,7 @@
 }
 
 .filter_invert {
-  /* filter: invert(75%); */
+  filter: invert(2%);
 }
 
 .filter_saturate {
@@ -226,7 +226,7 @@
 }
 
 .filter_blur {
-  /* filter: blur(15px); */
+  filter: blur(1px);
 }
 
 .filter_hue-rotate {
