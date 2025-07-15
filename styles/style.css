@@ -113,6 +113,7 @@
   color: var(--accent-color);
   font-variation-settings: "wght" 715, "slnt" 0;
   padding: 4px 10px 4px;
+  border-bottom: 2px solid black;
 }
 
 .card {
@@ -126,9 +127,9 @@
 .card__image-container {
   position: relative;
   overflow: hidden;
-  border-top: 0.5px solid #000;
-  border-bottom: 0.5px solid #000;
-  box-shadow: 0 0 0 0.5px black;
+  /* border-top: 0.5px solid #000; */
+  border-bottom: 3px solid #000;
+  /* box-shadow: 0 0 0 0.5px black; */
 }
 
 .card__image-container::before {
@@ -159,9 +160,11 @@
 
 .card__image {
   display: block;
-  min-height: 690px;
+  min-height: 696px;
   width: 100%;
-  object-fit: contain;
+  object-fit: cover;
+  object-position: center;
+  aspect-ratio: 1/1;
 }
 
 .card__content {
@@ -170,6 +173,7 @@
   font-size: 18px;
   font-weight: 410;
   line-height: 21px;
+  /* border-top: 2px solid black; */
 }
 
 .card__content p:not(:last-child) {
@@ -218,7 +222,7 @@
 }
 
 .filter_invert {
-  filter: invert(2%);
+  filter: invert(80%);
 }
 
 .filter_saturate {
@@ -226,7 +230,7 @@
 }
 
 .filter_blur {
-  filter: blur(1px);
+  filter: blur(15px);
 }
 
 .filter_hue-rotate {
